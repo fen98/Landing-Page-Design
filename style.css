@@ -1,103 +1,83 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 body{
-	background: #e05729;
+	background: #f4f4f4;
 }
 
-nav{
+header{
 	width: 100%;
-	height: 60px;
-	line-height: 60px;
-	position: relative;
+	height: 150px;
+	background: aqua;
 }
 
-nav .logo-nav{
-	position: relative;
-	float: left;
+header h1{
+	font-family: 'Josefin Sans', sans-serif;
+	background: bisque;
+	text-decoration: underline;
+	padding: 15px;
 }
 
-nav .logo-nav a{
-	display: block;
-	text-decoration: none;
-	color: #fff82e;
-	position: relative;
-	left: 100px;
+header h1 span{
+	color: red;
+	font-family: 
 }
 
-nav .logo-nav h1{
-	font-family: sans-serif;
-	font-size: 20px;
-	letter-spacing: 2px;
+input{
+	margin-left: 15px;
+	width: 200px;
+	height: 25px;
 }
 
-nav .menu-bar{
-	position: absolute;
-	right: 70px;
-	float: left;
+button{
+	height: 31px;
+	cursor: pointer;
 }
 
-nav .menu-bar a{
-	text-decoration: none;
-	display: inline-block;
-	margin: 0 30px;
-	color: #fff82e;
-	font-family: sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-main{
-	position: relative;
-
-}
-
-main .hello{
+.nav_bar{
 	text-align: center;
-	margin: auto;
-	position: relative;
-	top: 150px;
+	background: salmon;
 }
 
-main .hello h1{
-	font-family: sans-serif;
-	font-size: 300px;
-	color: #fff82e;
+.nav_bar ul li{
+	display: inline;
+	list-style-type: none;
+	margin: 0 50px 0 50px;
 }
 
-.hello{
-	-webkit-animation: hello 0.65s linear both;
-	        animation: hello 0.65s linear both;
+.nav_bar a{
+	text-decoration: none;
 }
 
-@-webkit-keyframes hello {
-  0% {
-    -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
-  }
-  50% {
-    -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
-  }
+.nav_bar a:hover{
+	color: red;
 }
-@keyframes hello {
-  0% {
-    -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
-  }
-  50% {
-    -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
-  }
+
+.wrapper{
+	background: yellow;
+	width: 100%;
+	margin-top: -21px;
+}
+
+article h2{
+	padding: 10px;
+}
+article p{
+	padding: 5px;
+}
+
+section h3{
+	padding: 10px;
+}
+
+section p{
+	padding: 5px;
+}
+
+footer{
+	margin-top: -21px;
+	background: salmon;
+	height: 50px;
+	text-align: center;
+}
+
+footer p{
+	padding: 15px;
 }
